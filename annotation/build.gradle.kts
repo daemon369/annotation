@@ -11,8 +11,8 @@ plugins {
 }
 
 java {
-    sourceCompatibility = JavaVersion.VERSION_1_7
-    targetCompatibility = JavaVersion.VERSION_1_7
+    sourceCompatibility = JavaVersion.VERSION_1_8
+    targetCompatibility = JavaVersion.VERSION_1_8
 }
 
 val publishInfo = PublishInfo(
@@ -20,7 +20,7 @@ val publishInfo = PublishInfo(
     artifactVersion = "1.0.0",
     pom = Pom(
         name = "annotation",
-        description = "Android annotation",
+        description = "Annotation Library",
         url = "https://github.com/daemon369/annotation",
         scm = Scm(
             connection = "scm:git:git://github.com/daemon369/annotation.git",
