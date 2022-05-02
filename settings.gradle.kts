@@ -1,3 +1,5 @@
+@file:Suppress("UnstableApiUsage")
+
 pluginManagement {
     repositories {
         gradlePluginPortal()
@@ -14,5 +16,6 @@ dependencyResolutionManagement {
     }
 }
 
+includeBuild("compositeBuild")
 include(":demo")
 include(":annotation")
