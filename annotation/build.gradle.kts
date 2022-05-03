@@ -32,12 +32,11 @@ val publishInfo = PublishInfo(
     )
 )
 
-val artifactGroupId:String by project
+val artifactGroupId: String by project
 
 tasks.withType<org.jetbrains.kotlin.gradle.tasks.KotlinCompile>().all {
     kotlinOptions {
-        freeCompilerArgs =
-            listOf("-module-name", "${artifactGroupId}.${publishInfo.artifactId}")
+        freeCompilerArgs = listOf("-module-name", "${artifactGroupId}.${publishInfo.artifactId}")
         jvmTarget = "1.8"
     }
 }
